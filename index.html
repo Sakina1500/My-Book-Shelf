@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Shelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Book Shelf</h1>
+
+    <div class="main-container">
+        
+        <form id="add-form">
+            <div id="summary-wrap">
+                Total: <span id="total-books">0</span> | 
+                Finished: <span id="finished-books">0</span> | 
+                To read: <span id="unread-books">0</span>
+            </div>
+            
+            <label>Book Title</label>
+            <input id="form-input-title" type="text" placeholder="Enter Book Title">
+            <label>Book Author</label>
+            <input id="form-input-author" type="text" placeholder="Enter Book Author">
+            <button type="button" onclick="addNewBook()">+Add</button>
+        </form>
+
+        <div class="list-container">
+            <ul id="books-list"></ul>
+            <div id="empty-state">Your shelf is empty. Add a book.</div>
+        </div>
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
